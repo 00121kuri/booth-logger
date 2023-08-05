@@ -12,7 +12,7 @@
 
 ### Selenium
 ```
-docker run --rm -d -p 4444:4444 -p 5900:5900 --name selenium-server -v /dev/shm:/dev/shm selenium/standalone-chrome:4.1.0-20211123
+docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.11.0-20230801
 ```
 
 ### envファイル
