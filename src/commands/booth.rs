@@ -6,7 +6,7 @@ use std::env;
 use dotenv::dotenv;
 
 use crate::models::item::{Item, ItemList};
-use crate::commands::json::{save_json, read_json};
+use crate::commands::json::save_json;
 
 pub async fn save_booth_items() -> Result<(), Box<dyn std::error::Error>>{
     dotenv().ok();
